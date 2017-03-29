@@ -33,4 +33,5 @@ Story boards are used for defining relationship between view controllers and `NS
 - Test Harness: not currently implemented for the sake of simplicity, but network calls can be stubbed using the [**OHHTTPStubs**](https://github.com/AliSoftware/OHHTTPStubs) framework and at lest data provider can be verified
 - Information about country names is not localised, so it has to be worked out properly for corresponding internationalisation, moreover current implementation of grouping and filtering has to be adjusted
 - Country flags are currently static resources increasing the bundle size, information about countries contains links to corresponding SVG assets. Since it's not possible to render SVG on iOS without external libraries it was decided not to use them, but having them downloaded and rendered is really big win as country flags are formed from simple primitives, so SVG files are lightweight, and their rendered versions could be cached and reused.
-- At the moment not all available information about countries is presented, so it has to be expanded.
+- At the moment not all available information about countries is presented, so it has to be expanded
+- Cancellation of data updates is to be improved as currently only network requests can be cancelled, but upcoming parsing of JSON data and updates of persistent storage have to be cancellable as well
