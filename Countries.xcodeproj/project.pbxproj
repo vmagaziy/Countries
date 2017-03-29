@@ -769,8 +769,9 @@
 				9403BDF51E8C01C400D68EDD /* zm.png */,
 				9403BDF61E8C01C400D68EDD /* zw.png */,
 			);
-			path = Flags;
-			sourceTree = "<group>";
+			name = Flags;
+			path = "country-flags/png250px";
+			sourceTree = SOURCE_ROOT;
 		};
 		9472B8A51E8BD98F0080843E /* Model */ = {
 			isa = PBXGroup;
