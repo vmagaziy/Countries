@@ -496,6 +496,7 @@
 		9403BDF41E8C01C400D68EDD /* za.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = za.png; sourceTree = "<group>"; };
 		9403BDF51E8C01C400D68EDD /* zm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = zm.png; sourceTree = "<group>"; };
 		9403BDF61E8C01C400D68EDD /* zw.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = zw.png; sourceTree = "<group>"; };
+		944D5D0D1E8C49DE00E66503 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		9472B8A21E8BD97A0080843E /* RTCountry+JSONUpdate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RTCountry+JSONUpdate.h"; sourceTree = "<group>"; };
 		9472B8A31E8BD97A0080843E /* RTCountry+JSONUpdate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RTCountry+JSONUpdate.m"; sourceTree = "<group>"; };
 		9472B8A71E8BE7000080843E /* RTCountry+Groupping.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RTCountry+Groupping.h"; sourceTree = "<group>"; };
@@ -801,6 +802,7 @@
 		94763D131E8AE60F00E93FCC = {
 			isa = PBXGroup;
 			children = (
+				944D5D0D1E8C49DE00E66503 /* README.md */,
 				94763D1E1E8AE60F00E93FCC /* Countries */,
 				94763D1D1E8AE60F00E93FCC /* Products */,
 			);
