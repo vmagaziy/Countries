@@ -1,0 +1,25 @@
+---
+BasedOnStyle: LLVM
+
+AlwaysBreakBeforeMultilineStrings: true
+AlignTrailingComments: false
+AllowShortIfStatementsOnASingleLine: false
+AlignEscapedNewlinesLeft: true
+BreakBeforeBraces: Allman
+ContinuationIndentWidth: 4
+ColumnLimit: 0
+IndentWidth: 4
+ObjCBlockIndentWidth: 4
+IndentCaseLabels: true
+KeepEmptyLinesAtTheStartOfBlocks: false
+MaxEmptyLinesToKeep: 1
+ObjCSpaceAfterProperty: true
+ObjCSpaceBeforeProtocolList: true
+PointerBindsToType: false
+SpaceBeforeParens: ControlStatements
+SpacesInParentheses: false
+SpacesInContainerLiterals: false
+SpacesBeforeTrailingComments: 1
+UseTab: Never
+Standard: Cpp03
+SortIncludes: false
