@@ -37,3 +37,4 @@ Artificial brand color is used to tint standard controls.
 - Country flags are currently static resources increasing the bundle size, information about countries contains links to corresponding SVG assets. Since it's not possible to render SVG on iOS without external libraries it was decided not to use them, but having them downloaded and rendered is really big win as country flags are formed from simple primitives, so SVG files are lightweight, and their rendered versions could be cached and reused.
 - At the moment not all available information about countries is presented, so it has to be expanded
 - Cancellation of data updates is to be improved as currently only network requests can be cancelled, but upcoming parsing of JSON data and updates of persistent storage have to be cancellable as well
+- Network availability is not tracked, but it makes sense to do to reload the data when the previous reload failed because of no connection
