@@ -24,7 +24,9 @@ Necessary updates are abstracted by `RTCountriesDataProvider` and stored in the 
 
 The UI is not bound to a predefined form factor of device, but the [Master-Detail Interface](https://developer.apple.com/library/content/documentation/Cocoa/Conceptual/CocoaBindings/Tasks/masterdetail.html) is used to present the list of countries and information about them.
 
-Story boards are used for defining relationship between view controllers and `NSLocalizedString` is used for localisations.
+Storyboard is used for defining relationship between UI elements and `NSLocalizedString` is used for localisations.
+
+Artificial brand color is used to tint standard controls.
 
 [Pull to refresh](https://en.wikipedia.org/wiki/Pull-to-refresh) is used to update information about countries.
 

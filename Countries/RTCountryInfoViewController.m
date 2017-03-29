@@ -28,6 +28,8 @@
     }
 }
 
+#pragma mark - Implementation
+
 - (void)updateView
 {
     self.title = self.country.name;
@@ -53,7 +55,12 @@
 
     UIImage *flagImage = [UIImage imageNamed:self.country.alpha2Code];
     self.flagImageView.image = flagImage;
-    self.headerView.frame = flagImage ? CGRectMake(0, 0, 0, 100) : CGRectZero;
+    self.headerView.frame = flagImage ? CGRectMake(0, 0, 0, [[self class] defaultHeaderHeight]) : CGRectZero;
+}
+
++ (CGFloat)defaultHeaderHeight
+{
+    return 100;
 }
 
 @end

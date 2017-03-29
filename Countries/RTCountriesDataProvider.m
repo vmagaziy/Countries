@@ -93,7 +93,7 @@ NSString *const RTCountriesDataProviderErrorDomain = @"RTCountriesDataProviderEr
 - (void)reloadWithJSONEntriesMap:(NSDictionary *)map
                       completion:(RTCountriesDataProviderCompletion)completion
 {
-    // update the false context and save changes in the batch making corresponding UI updates
+    // update the background context and save changes in a batch to generate corresponding UI updates
     __weak typeof(self) weakSelf = self;
     [self.container performBackgroundTask:^(NSManagedObjectContext *context) {
         NSError *fetchError;
@@ -125,10 +125,11 @@ NSString *const RTCountriesDataProviderErrorDomain = @"RTCountriesDataProviderEr
             }
             else
             {
-                [context deleteObject:country];
+                [context deleteObject:country]; // delete no longer referenced country
             }
         }
 
+        // add new countries
         [map enumerateKeysAndObjectsUsingBlock:^(NSString *countryId, NSDictionary *jsonDictionary, BOOL *stop) {
             if (![handledCountryIds containsObject:countryId])
             {

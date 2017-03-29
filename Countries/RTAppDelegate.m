@@ -61,7 +61,7 @@
             [_persistentContainer loadPersistentStoresWithCompletionHandler:^(NSPersistentStoreDescription *storeDescription, NSError *error) {
                 if (!storeDescription)
                 {
-                    // Replace this implementation with code to handle the error appropriately.
+                    // FIXME: replace this implementation with code to handle the error appropriately.
                     NSLog(@"Unresolved error %@, %@", error, error.userInfo);
                 }
             }];
@@ -79,7 +79,7 @@
     NSError *error = nil;
     if ([context hasChanges] && ![context save:&error])
     {
-        // Replace this implementation with code to handle the error appropriately.
+        // FIXME: replace this implementation with code to handle the error appropriately.
         NSLog(@"Unresolved error %@, %@", error, error.userInfo);
     }
 }
