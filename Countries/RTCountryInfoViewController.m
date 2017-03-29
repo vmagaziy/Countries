@@ -46,7 +46,7 @@
     NSString *region = self.country.region;
     self.regionCell.detailTextLabel.text = region.length != 0 ? region : unknownString;
 
-    self.populationCell.detailTextLabel.text = self.country.population != 0 ? [NSNumberFormatter localizedStringFromNumber:@(self.country.population) numberStyle:NSNumberFormatterNoStyle] : unknownString;
+    self.populationCell.detailTextLabel.text = self.country.population != 0 ? [NSNumberFormatter localizedStringFromNumber:@(self.country.population) numberStyle:NSNumberFormatterDecimalStyle] : unknownString;
 
     NSString *nativeName = self.country.nativeName;
     self.nativeNameCell.detailTextLabel.text = nativeName.length != 0 ? nativeName : unknownString;
